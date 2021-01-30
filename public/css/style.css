@@ -1,0 +1,129 @@
+:root {
+  --Primary-color: #7e3988;
+  --Light-primar-color: #a9a7d6;
+  --Secondary-color: #ffe822;
+  --Light-secondary-color: #f9e798;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(360deg, var(--Light-secondary-color), whitesmoke);
+}
+
+header {
+  height: 100px;
+  background: linear-gradient(
+    45deg,
+    var(--Primary-color),
+    var(--Light-primar-color)
+  );
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 2px 2px 10px var(--Light-primar-color);
+}
+.header__logo {
+  height: 80px;
+  padding: 0 10px;
+  filter: drop-shadow(0px 0px 20px var(--Light-secondary-color));
+}
+.header__text {
+  color: rgb(19, 19, 19);
+  text-shadow: 2px 2px 15px whitesmoke;
+  font-weight: 600;
+  font-size: 30px;
+}
+.pantalla-inicial {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 100px;
+  /* background: green; */
+  display: flex;
+  align-items: center;
+}
+
+.pantalla-inicial__form {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.pantalla-inicial__form input[type="submit"] {
+  flex-basis: 33%;
+  border: none;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  text-overflow: ellipsis;
+  box-shadow: 5px 2px 10px rgb(97, 97, 97);
+  font-size: 40px;
+  background: var(--Primary-color);
+  color: whitesmoke;
+  text-shadow: 5px 2px 10px rgb(97, 97, 97);
+}
+
+.form-group {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 25%;
+}
+.form-group label {
+  font-size: 20px;
+  flex-basis: 35%;
+  text-align: center;
+  margin-bottom: 10px;
+  display: inline;
+  color: whitesmoke;
+  background: rgb(56, 56, 56);
+}
+
+.form-group input {
+  border-radius: 3px;
+  border: none;
+  height: 25px;
+  flex-basis: 66%;
+  box-shadow: 5px 5px 20px var(--Secondary-color), 5px -5px 10px whitesmoke;
+}
+.pantalla-loading {
+  display: none; /* Cambiar por disply Flex */
+  height: 100vh;
+  width: 100vw;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pantalla-loading__img {
+  height: 30%;
+  text-align: center;
+  filter: drop-shadow(20px 20px 20px var(--Light-secondary-color));
+  animation: growing 3s infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes growing {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(4);
+    opacity: 0.7;
+  }
+}
