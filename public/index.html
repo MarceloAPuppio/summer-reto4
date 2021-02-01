@@ -16,17 +16,17 @@
     </header>
 
     <section class="pantalla-inicial">
-        <form action="#" class="pantalla-inicial__form">
+        <form action="#" class="pantalla-inicial__form" id="form-initial">
         
         <div class="form-group">
         <label for="jugador1">Jugador 1</label>
-        <input name="jugador1" type="text">
+        <input id="jugador1" name="jugador1" type="text">
         </div>
         <div class="form-group">
         <label for="jugador2">Jugador 2</label>
-        <input name="jugador2" type="text">
+        <input id="jugador2" name="jugador2" type="text">
         </div>
-        <input type="submit" value="Play">
+        <input id="btn-play" type="submit" value="Play">
     </form>
     </section>
 
@@ -34,23 +34,38 @@
             <img class="pantalla-loading__img" src="images/eye.png" alt="">
     </section>
 
-    <section class="pantalla-cartas">
-        <i class="far fa-times-circle pantalla-cartas__btnexit"></i>
-        <h1 class="pantalla-cartas__header">Carta 1/3 de....</h1>
-        <i class="fas fa-arrow-circle-left pantalla-cartas__btnslider"></i> <div class="pantalla-cartas__img-container"><img class="pantalla-cartas__img" src="images/baraja/2b.png" alt="baraja"></div><i class="fas fa-arrow-circle-right pantalla-cartas__btnslider"></i>
-        <h3 class="pantalla-cartas__title">Título</h3>
-        <p class="pantalla-cartas__description">Lorem, ipsum</p>
+    <section class="pantalla-cartas" id="pantalla-cartas">
+    
     </section>
 
     <section class="pantalla-modal">
         <div class="pantalla-modal__botonera">
             <button class="pantalla-modal__botonera__btn">Ver Resultados</button>
-            <button class="pantalla-modal__botonera__btn">Volver a tirar</button>
+            <button class="pantalla-modal__botonera__btn" id="btnTryAgain">Volver a tirar</button>
         </div>
     </section>
     <section class="pantalla-resultados">
-        
+        <div class="pantalla-resultados__contenedorPlayer">
+            <h2>Juagor 1</h2>
+            <img src="images/baraja/2b.png" alt="">
+            <img src="images/baraja/2b.png" alt="">
+            <img src="images/baraja/2b.png" alt="">
+        </div>
+        <div class="pantalla-resultados__contenedorPlayer">
+            <h2>Juagor 2</h2>
+            <img src="images/baraja/2b.png" alt="">
+            <img src="images/baraja/2b.png" alt="">
+            <img src="images/baraja/2b.png" alt="">
+        </div>
     </section>
 
+    <template id="template-pantalla-cartas">
+        <i class="far fa-times-circle pantalla-cartas__btnexit"></i>
+        <h1 class="pantalla-cartas__header">Carta 1/3 de....</h1>
+        <i class="fas fa-arrow-circle-left pantalla-cartas__btnslider sliderLeft" id="sliderLeft"></i> <div class="pantalla-cartas__img-container"><img class="pantalla-cartas__img" src="images/baraja/2b.png" alt="baraja"></div><i id="sliderRight" class="fas fa-arrow-circle-right pantalla-cartas__btnslider"></i>
+        <h3 class="pantalla-cartas__title">Título</h3>
+        <p class="pantalla-cartas__description">Lorem, ipsum</p>
+    </template>
+<script src="js/main.js"></script>
 </body>
 </html>

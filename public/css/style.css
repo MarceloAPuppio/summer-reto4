@@ -132,7 +132,7 @@ header {
   flex-flow: wrap row;
   height: 100vh;
   max-width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
   background: linear-gradient(
     180deg,
     var(--Light-secondary-color),
@@ -211,6 +211,23 @@ header {
   height: 50px;
   box-shadow: 5px 5px 15px var(--Text-primary-color),
     5px 5px 15px var(--Text-secondary-color);
+}
+
+.pantalla-resultados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+  height: 100vh;
+  max-width: 100vw;
+  /* overflow: hidden; */
+  background: red;
+}
+.pantalla-resultados__contenedorPlayer {
+  flex-basis: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
 }
 @keyframes growing {
   from {
