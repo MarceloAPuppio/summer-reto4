@@ -43,6 +43,10 @@ formInitial.addEventListener("submit", (e) => {
   renderizarPantallaCartas(arregloCartasPersonas, 0);
   renderizarPantallaResultados(jugador1, jugador2);
   formInitial.reset();
+  alert('display: nono pantalla inicial');
+  alert('display-block:pantalla de carga');
+  setTimeout(()=>{alert('display block resultados')},3000)
+
 });
 
 btnTryAgain.addEventListener("click", () => {
