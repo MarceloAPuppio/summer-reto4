@@ -265,6 +265,9 @@ header {
   font-size: 180px;
 }
 
+#historialul > li:nth-child(1) {
+  color: red;
+}
 @keyframes growing {
   from {
     transform: scale(0.5);

@@ -28,6 +28,11 @@
         </div>
         <input id="btn-play" type="submit" value="Play">
     </form>
+    <div class="pantalla-inicial__historial">
+        <ul id="historial-ul">
+        
+        </ul>
+    </div>
     </section>
 
     <section class="pantalla-loading">
@@ -44,23 +49,8 @@
             <button class="pantalla-modal__botonera__btn" id="btnTryAgain">Volver a tirar</button>
         </div>
     </section>
-    <section class="pantalla-resultados">
-        <div class="pantalla-resultados__contenedorPlayer">
-            <h2 class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 1</h2>
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-        </div>
-        <div class="pantalla-resultados__contenedorPlayer">
-            <h2 class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 2</h2>
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-            <img src="images/baraja/2b.png" class="pantalla-resultados__contenedorPlayer__img" alt="">
-        </div>
-        <div class="pantalla-resultados__match">
-            <span class="pantalla-resultados__match__pre-titulo">Match:</span>
-            <h2 class="pantalla-resultados__match__titulo">SI</h2>
-        </div>
+    <section class="pantalla-resultados" id="pantalla-resultados">
+        
     </section>
 
     <template id="template-pantalla-cartas">
@@ -70,6 +60,33 @@
         <h3 class="pantalla-cartas__title">Título</h3>
         <p class="pantalla-cartas__description">Lorem, ipsum</p>
     </template>
+    <template id="template-pantalla-resultados">
+        <div class="pantalla-resultados__contenedorPlayer">
+            <h2 id="nombreJ1" class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 1</h2>
+            <img id="carta1" src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+            <img id="carta2" src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+            <img id="carta3" src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+        </div>
+        <div class="pantalla-resultados__contenedorPlayer">
+            <h2 id="nombreJ2" class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 2</h2>
+            <img id="carta4"  src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+            <img id="carta5"  src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+            <img id="carta6"  src="" class="pantalla-resultados__contenedorPlayer__img" alt="">
+        </div>
+        <div class="pantalla-resultados__match">
+            <span class="pantalla-resultados__match__pre-titulo">Match:</span>
+            <h2 id="match" class="pantalla-resultados__match__titulo">SI</h2>
+        </div>
+        <div class="pantalla-resultados__botonera">
+            <button id="guardar">Guardar</button>
+            <button id="volver">Volver</button>
+        </div>
+    </template>
+<template id="template-historial-li">
+<li id="li" data-json="0">
+   <p><span id="li-j1"></span><span>VS</span><span id="li-j2"></span><i id="btn-recuperarhistorial" class="fas fa-caret-right"></i></p> 
+</li>
+</template>
 <script src="js/main.js"></script>
 </body>
 </html>
