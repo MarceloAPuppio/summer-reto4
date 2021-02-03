@@ -220,6 +220,7 @@ header {
 .pantalla-cartas__description {
   flex-basis: 90%;
   text-align: center;
+  margin:0;
   /* background: darkolivegreen; */
   height: 150px;
 }
