@@ -14,28 +14,22 @@
     <header>
         <img class="header__logo" src="images/logo.png" alt=""> <span class="header__text">Oráculo</span>
     </header>
-
     <section class="pantalla-inicial">
         <form action="#" class="pantalla-inicial__form" id="form-initial">
         
         <div class="form-group">
         <label for="jugador1">Jugador 1</label>
-        <input id="jugador1" name="jugador1" type="text">
+        <input id="jugador1" name="jugador1" type="text" required>
         </div>
         <div class="form-group">
         <label for="jugador2">Jugador 2</label>
-        <input id="jugador2" name="jugador2" type="text">
+        <input id="jugador2" name="jugador2" type="text" required>
         </div>
         <input id="btn-play" type="submit" value="Play">
     </form>
     <div class="pantalla-inicial__historial">
         <ul id="historial-ul">
-            <li id="li" data-json="0">
-                <span id="li-j1">Pepe</span><span>VS</span><span id="li-j2">Solito</span><i id="btn-recuperarhistorial" class="fas fa-caret-right"></i>
-             </li>
-             <li id="li" data-json="0">
-                <span id="li-j1">Marcelo</span><span>VS</span><span id="li-j2">Puppio</span><i id="btn-recuperarhistorial" class="fas fa-caret-right"></i>
-             </li>
+            
         </ul>
     </div>
     </section>
@@ -50,16 +44,36 @@
 
     <section class="pantalla-modal">
         <div class="pantalla-modal__botonera">
-            <button class="pantalla-modal__botonera__btn">Ver Resultados</button>
+            <button class="pantalla-modal__botonera__btn" id="btnShowResults">Ver Resultados</button>
             <button class="pantalla-modal__botonera__btn" id="btnTryAgain">Volver a tirar</button>
         </div>
     </section>
     <section class="pantalla-resultados" id="pantalla-resultados">
-        
+              <div class="pantalla-resultados__contenedorPlayer">
+            <h2 id="nombreJ1" class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 1</h2>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta1" src=""  alt=""></div>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta2" src=""  alt=""></div>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta3" src=""  alt=""></div>
+        </div>
+        <div class="pantalla-resultados__contenedorPlayer">
+            <h2 id="nombreJ2" class='pantalla-resultados__contenedorPlayer__titulo'>Juagor 2</h2>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta4"  src="" alt=""></div>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta5"  src="" alt=""></div>
+            <div class="pantalla-resultados__contenedorPlayer__img"><img id="carta6"  src="" alt=""></div>
+        </div>
+        <div class="pantalla-resultados__match">
+            <span class="pantalla-resultados__match__pre-titulo">Match:</span>
+            <h2 id="match" class="pantalla-resultados__match__titulo">SI</h2>
+        </div>
+        <div class="pantalla-resultados__botonera">
+            <button id="guardar">Guardar</button>
+            <button id="volver">Volver</button>
+        </div>
     </section>
 
+    <!-- Templates -->
     <template id="template-pantalla-cartas">
-        <i class="far fa-times-circle pantalla-cartas__btnexit"></i>
+        <i class="far fa-times-circle pantalla-cartas__btnexit" id="exit-cartas"></i>
         <h1 class="pantalla-cartas__header">Carta 1/3 de....</h1>
         <i class="fas fa-arrow-circle-left pantalla-cartas__btnslider sliderLeft" id="sliderLeft"></i> <div class="pantalla-cartas__img-container"><img class="pantalla-cartas__img" src="images/baraja/2b.png" alt="baraja"></div><i id="sliderRight" class="fas fa-arrow-circle-right pantalla-cartas__btnslider"></i>
         <h3 class="pantalla-cartas__title">Título</h3>
@@ -87,11 +101,11 @@
             <button id="volver">Volver</button>
         </div>
     </template>
-<template id="template-historial-li">
-<li id="li" data-json="0">
-   <p><span id="li-j1"></span><span>VS</span><span id="li-j2"></span><i id="btn-recuperarhistorial" class="fas fa-caret-right"></i></p> 
-</li>
-</template>
+    <template id="template-historial-li">
+    <li id="li" data-json="0">
+    <p><span id="li-j1"></span><span>VS</span><span id="li-j2"></span><i id="btn-recuperarhistorial" class="fas fa-caret-right"></i></p> 
+    </li>
+    </template>
 <script src="js/main.js"></script>
 </body>
 </html>

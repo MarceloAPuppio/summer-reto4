@@ -3,6 +3,7 @@ let contadorGuardados = 0;
 // Punteros HTML
 const formInitial = document.getElementById("form-initial");
 const btnTryAgain = document.getElementById("btnTryAgain");
+const btnShowResults = document.getElementById("btnShowResults");
 const inputJugador1 = document.getElementById("jugador1");
 const inputJugador2 = document.getElementById("jugador2");
 const templatePantallaCartas = document.getElementById(
@@ -14,7 +15,11 @@ const templatePantallaResultados = document.getElementById(
 const templateHistorialLi = document.getElementById("template-historial-li")
   .content;
 const historialUl = document.getElementById("historial-ul");
+const header = document.querySelector("header");
+const pantallaInicial = document.querySelector(".pantalla-inicial");
+const pantallaModal = document.querySelector(".pantalla-modal");
 const pantallaCartas = document.getElementById("pantalla-cartas");
+const pantallaLoading = document.querySelector(".pantalla-loading");
 const pantallaResultados = document.getElementById("pantalla-resultados");
 const fragmentPantallaCartas = document.createDocumentFragment();
 const fragmentPantallaResultados = document.createDocumentFragment();
@@ -43,15 +48,29 @@ formInitial.addEventListener("submit", (e) => {
   renderizarPantallaCartas(arregloCartasPersonas, 0);
   renderizarPantallaResultados(jugador1, jugador2);
   formInitial.reset();
-  alert('display: nono pantalla inicial');
-  alert('display-block:pantalla de carga');
-  setTimeout(()=>{alert('display block resultados')},3000)
-
+  pantallaInicial.style.display = "none";
+  header.style.display = "none";
+  pantallaLoading.style.display = "flex";
+  setTimeout(() => {
+    pantallaLoading.style.display = "none";
+    pantallaCartas.style.display = "flex";
+  }, 4500);
 });
 
 btnTryAgain.addEventListener("click", () => {
   arregloCartasPersonas.splice(0, arregloCartasPersonas.length);
+  pantallaModal.style.display = "none";
+  pantallaCartas.style.display = "none";
+  pantallaInicial.style.display = "flex";
+  header.style.display = "flex";
 });
+btnShowResults.addEventListener("click", () => {
+  arregloCartasPersonas.splice(0, arregloCartasPersonas.length);
+  pantallaModal.style.display = "none";
+  pantallaCartas.style.display = "none";
+  pantallaResultados.style.display = "flex";
+});
+
 //Array de objetos cartas
 
 let cartas;
@@ -119,6 +138,10 @@ function renderizarPantallaCartas(arreglo, position) {
   pantallaCartas
     .querySelector(".sliderLeft")
     .addEventListener("click", () => disminuirPosicionArray());
+  const btnExitCartas = document.getElementById("exit-cartas");
+  btnExitCartas.addEventListener("click", () => {
+    pantallaModal.style.display = "flex";
+  });
 }
 
 function renderizarPantallaResultados(persona1, persona2) {
@@ -132,12 +155,18 @@ function renderizarPantallaResultados(persona1, persona2) {
     persona1.nombre;
   templatePantallaResultados.querySelector("#nombreJ2").textContent =
     persona2.nombre;
-  templatePantallaResultados.querySelector("#match").textContent =
-    persona1.calcularValor() == persona2.calcularValor();
+  templatePantallaResultados.querySelector(
+    "#match"
+  ).textContent = `${Tools.Matching(persona1, persona2)}`;
   let clone = templatePantallaResultados.cloneNode(true);
   fragmentPantallaResultados.appendChild(clone);
   pantallaResultados.innerHTML = "";
   pantallaResultados.appendChild(fragmentPantallaResultados);
+  document.getElementById("volver").addEventListener("click", () => {
+    pantallaResultados.style.display = "none";
+    header.style.display = "flex";
+    pantallaInicial.style.display = "flex";
+  });
   document.getElementById("guardar").addEventListener("click", function () {
     templateHistorialLi.querySelector("#li-j1").textContent = persona1.nombre;
     templateHistorialLi.querySelector("#li-j2").textContent = persona2.nombre;
@@ -151,7 +180,6 @@ function renderizarPantallaResultados(persona1, persona2) {
     historialUl
       .querySelector(`li:nth-child(${contadorGuardados + 1})`)
       .addEventListener("click", function () {
-        alert(this.getAttribute("data-json"));
         let positionHistorico = this.getAttribute("data-json");
         historico[positionHistorico].jugador1.agregarArray();
         historico[positionHistorico].jugador2.agregarArray();
@@ -160,13 +188,24 @@ function renderizarPantallaResultados(persona1, persona2) {
           historico[positionHistorico].jugador1,
           historico[positionHistorico].jugador2
         );
-        arregloCartasPersonas.splice(0, arregloCartasPersonas.length);
+        pantallaInicial.style.display = "none";
+        header.style.display = "none";
+        document.getElementById("guardar").style.display = "none";
+        pantallaCartas.style.display = "flex";
       });
     contadorGuardados++;
+    document.getElementById("guardar").style.display = "block";
+    pantallaResultados.style.display = "none";
+    header.style.display = "flex";
+    pantallaInicial.style.display = "flex";
   });
 }
 class Tools {
   static GenerarAleatorio() {
     return Math.floor(Math.random() * 7);
+  }
+  static Matching(persona1, persona2) {
+    if (persona1.calcularValor() == persona2.calcularValor()) return "Si";
+    else return "No";
   }
 }
