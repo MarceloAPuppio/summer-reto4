@@ -1,8 +1,8 @@
 :root {
-  --Primary-color: #7e3988;
-  --Light-primar-color: #a9a7d6;
-  --Secondary-color: #ffe822;
-  --Light-secondary-color: #f9e798;
+  --Primary-color: #48a682;
+  --Light-primar-color: #93dd7b;
+  --Secondary-color: #fBF847;
+  --Light-secondary-color:#fffd91;;
   --Text-primary-color: rgb(26, 25, 25);
   --Text-secondary-color: rgb(73, 73, 73);
 }
@@ -57,6 +57,7 @@ header {
   align-items: center;
   align-content: space-between;
   overflow: hidden;
+  animation: fadeIn 0.5s;
 }
 
 .pantalla-inicial__form {
@@ -153,7 +154,7 @@ header {
 .pantalla-loading__img {
   height: 30%;
   text-align: center;
-  filter: drop-shadow(20px 20px 20px var(--Light-secondary-color));
+  filter: drop-shadow(5px 5px 5px var(--Light-secondary-color));
   animation: growing 3s infinite;
   animation-delay: 0.3s;
 }
@@ -167,6 +168,7 @@ header {
   max-width: 100vw;
   /* overflow: hidden; */
   background: linear-gradient(180deg, whitesmoke, var(--Light-primar-color));
+  animation: fadeIn 0.5s;
 }
 
 .pantalla-cartas__btnexit {
@@ -199,7 +201,7 @@ header {
   /* background: cornflowerblue; */
 }
 .pantalla-cartas__img {
-  height: 200px;
+  height: 300px;
   width: auto;
 }
 .pantalla-cartas__btnslider {
@@ -216,7 +218,7 @@ header {
   /* background: darkmagenta; */
 }
 .pantalla-cartas__description {
-  flex-basis: 100%;
+  flex-basis: 90%;
   text-align: center;
   /* background: darkolivegreen; */
   height: 150px;
@@ -233,6 +235,7 @@ header {
   background: rgba(245, 245, 245, 0.651);
   justify-content: center;
   align-content: flex-start;
+  animation: fadeIn 0.5s;
 }
 
 .pantalla-modal__botonera {
@@ -268,6 +271,7 @@ header {
   min-height: 100vh;
   max-width: 100vw;
   overflow: hidden;
+  animation: fadeIn 0.5s;
 }
 .pantalla-resultados__contenedorPlayer {
   height: 180px;
@@ -298,7 +302,8 @@ header {
     -2px -2px 2px var(--Text-secondary-color);
 }
 .pantalla-resultados__contenedorPlayer__img img {
-  width: 90px;
+  height: 200px;
+  width: auto;
 }
 .pantalla-resultados__match {
   text-align: center;
@@ -350,8 +355,12 @@ header {
   color: var(--Text-primary-color);
   box-shadow: 2px 2px 2px var(--Text-secondary-color);
 }
-#historialul > li:nth-child(1) {
-  color: red;
+
+.grow-up {
+  transition: all 0.25s ease-in-out;
+}
+.grow-up:hover {
+  transform: scale(1.2);
 }
 @keyframes growing {
   from {
@@ -361,6 +370,14 @@ header {
   to {
     transform: scale(4);
     opacity: 0.7;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
