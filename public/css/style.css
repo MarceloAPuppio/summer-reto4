@@ -364,7 +364,7 @@ header {
 }
 @keyframes growing {
   from {
-    transform: scale(0.5);
+    transform: scale(1);
     opacity: 1;
   }
   to {
