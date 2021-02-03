@@ -1,53 +1,114 @@
 [{
-      "nombre": "1 verde",
-      "descripcion": "lorem ipsum",
-      "src": "images/baraja/2b.png",
+      "nombre": "La Muerte",
+      "descripcion": "La muerte como fin, o como un nuevo comienzo... chan",
+      "src": "images/baraja/1.png",
       "valor":23
     },
     {
-      "nombre": "2 verde",
-      "descripcion": "lorem ipsum",
-      "src": "images/eye.png",
+      "nombre": "El Sol",
+      "descripcion": "Re contento el niño montando su caballo xD",
+      "src": "images/baraja/2.png",
       "valor":569
 
     },
     {
-      "nombre": "3 verde",
-      "descripcion": "lorem ipsum",
-      "src": "images/logo.png",
+      "nombre": "La Luna",
+      "descripcion": "Unos lindos perritos te van a querer para su eternidad. Qué más lindo que eso",
+      "src": "images/baraja/3.jpg",
       "valor":1
 
     },
     {
-      "nombre": "4 verde",
-      "descripcion": "lorem ipsum",
-      "src":
-        "https://st3.depositphotos.com/5366154/13715/i/600/depositphotos_137155922-stock-photo-fire-letter-e-of-burning.jpg",
+      "nombre": "El mundo",
+      "descripcion": "El mundo, vas a viajar a Perú. Perú y Av. de Mayo",
+      "src": "images/baraja/4.png",
       "valor":196
 
     },
     {
-      "nombre": "5 verde",
-      "descripcion": "lorem ipsum",
-      "src":
-        "https://thumbs.dreamstime.com/t/nubes-en-forma-de-coraz%C3%B3n-blancas-en-el-cielo-azul-95276636.jpg",
+      "nombre": "La Templanza",
+      "descripcion": "Se sereno, a mar revuelto, ganancia de pescadores (?",
+      "src": "images/baraja/5.jpg",
       "valor":546
 
     },
     {
-      "nombre": "6 verde",
-      "descripcion": "lorem ipsum",
-      "src":
-        "https://st3.depositphotos.com/3203307/18596/i/600/depositphotos_185963658-stock-photo-unicorn-nebula-background.jpg",
+      "nombre": "La Emperatriz",
+      "descripcion": "Vas a tener un descuento del 30% con tu banco de cabecera (tope $500)",
+      "src": "images/baraja/6.png",
       "valor":3
 
     },
     {
-      "nombre": "7 verde",
-      "descripcion": "lorem ipsum",
-      "src":
-        "https://marcianosmx.com/wp-content/uploads/2013/08/minimoo64_fractals_01.jpg",
-      "valor":133
+      "nombre": "El Mago",
+      "descripcion": "Por qué tenía un infinito en la cabeza???",
+      "src": "images/baraja/7.jpg",
+      "valor":13
+
+    }
+    ,
+    {
+      "nombre": "El Loco",
+      "descripcion": "Si estás 'Loco' en este mundo podrido, te felicito, estás haciendo las cosas bien",
+      "src": "images/baraja/8.jpg",
+      "valor":108
+
+    },
+    {
+      "nombre": "Judgement",
+      "descripcion": "Soy un angel, no existo, pero puedo juzgarlos y subyugarlos",
+      "src": "images/baraja/9.jpg",
+      "valor":25
+
+    },
+    {
+      "nombre": "El Emperador",
+      "descripcion": "Terminas de ver una Masterclass y vos tipo...",
+      "src": "images/baraja/10.jpg",
+      "valor":33
+
+    },
+    {
+      "nombre": "La fuerza",
+      "descripcion": "Cuando le tenés que dar el antiparasitario a tu gato",
+      "src": "images/baraja/11.jpg",
+      "valor":44
+
+    },
+    {
+      "nombre": "La rueda de la fortuna",
+      "descripcion": "Nada puede malir sal, aunque la fortuna no existe, uno erige su propio destino",
+      "src": "images/baraja/12.jpg",
+      "valor":100
+
+    }
+    ,
+    {
+      "nombre": "Tres copas",
+      "descripcion": "Chin- Chin",
+      "src": "images/baraja/13.png",
+      "valor":20
+
+    },
+    {
+      "nombre": "9 de oros",
+      "descripcion": "Tengo oro, pero prefieron acariciar a mi nuevo plumífero amigo :)",
+      "src": "images/baraja/14.png",
+      "valor":1
+
+    },
+    {
+      "nombre": "El Colgado",
+      "descripcion": "Vos, una vez que empezaste el Summer... desaparecido",
+      "src": "images/baraja/15.jpg",
+      "valor":40
+
+    },
+    {
+      "nombre": "Los enamorados",
+      "descripcion": "Más amor y menos odio :)",
+      "src": "images/baraja/16.jpg",
+      "valor":72
 
     }
   ]

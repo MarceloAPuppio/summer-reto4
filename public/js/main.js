@@ -1,5 +1,44 @@
 let posicionArray = 0;
 let contadorGuardados = 0;
+
+//Clases
+class Tools {
+  static GenerarAleatorio() {
+    return Math.floor(Math.random() * 7);
+  }
+  static Matching(persona1, persona2) {
+    if (persona1.calcularValor() == persona2.calcularValor()) return "Si";
+    else return "No";
+  }
+}
+
+class Persona {
+  constructor(nombre, carta1, carta2, carta3) {
+    this.nombre = nombre;
+    this.carta1 = carta1;
+    this.carta2 = carta2;
+    this.carta3 = carta3;
+  }
+  agregarArray() {
+    arregloCartasPersonas.push({
+      titulo: `Carta 1 de 3 de ${this.nombre}`,
+      carta: this.carta1,
+    });
+    arregloCartasPersonas.push({
+      titulo: `Carta 2 de 3 de ${this.nombre}`,
+      carta: this.carta2,
+    });
+    arregloCartasPersonas.push({
+      titulo: `Carta 3 de 3 de ${this.nombre}`,
+      carta: this.carta3,
+    });
+  }
+  calcularValor() {
+    /* Suma los valores de las cartas y averigua si el valor es par o impar */
+    return (this.carta1.valor + this.carta2.valor + this.carta3.valor) % 2 == 0;
+  }
+}
+
 // Punteros HTML
 const formInitial = document.getElementById("form-initial");
 const btnTryAgain = document.getElementById("btnTryAgain");
@@ -8,7 +47,7 @@ const inputJugador1 = document.getElementById("jugador1");
 const inputJugador2 = document.getElementById("jugador2");
 const templatePantallaCartas = document.getElementById(
   "template-pantalla-cartas"
-).content;
+  ).content;
 const templatePantallaResultados = document.getElementById(
   "template-pantalla-resultados"
 ).content;
@@ -80,34 +119,9 @@ fetch("arreglo.json")
 
 //areglo de cartas de personas
 let arregloCartasPersonas = [];
-// clases
 
-class Persona {
-  constructor(nombre, carta1, carta2, carta3) {
-    this.nombre = nombre;
-    this.carta1 = carta1;
-    this.carta2 = carta2;
-    this.carta3 = carta3;
-  }
-  agregarArray() {
-    arregloCartasPersonas.push({
-      titulo: `Carta 1 de 3 de ${this.nombre}`,
-      carta: this.carta1,
-    });
-    arregloCartasPersonas.push({
-      titulo: `Carta 2 de 3 de ${this.nombre}`,
-      carta: this.carta2,
-    });
-    arregloCartasPersonas.push({
-      titulo: `Carta 3 de 3 de ${this.nombre}`,
-      carta: this.carta3,
-    });
-  }
-  calcularValor() {
-    /* Suma los valores de las cartas y averigua si el valor es par o impar */
-    return (this.carta1.valor + this.carta2.valor + this.carta3.valor) % 2 == 0;
-  }
-}
+
+
 function aumentarPosicionArray() {
   posicionArray++;
   if (posicionArray > 5) posicionArray = 0;
@@ -128,6 +142,13 @@ function renderizarPantallaCartas(arreglo, position) {
   templatePantallaCartas.querySelector(
     "img"
   ).src = `${arreglo[position].carta.src}`;
+  templatePantallaCartas.querySelector(
+    "p"
+  ).textContent = `${arreglo[position].carta.descripcion}`;
+  templatePantallaCartas.querySelector(
+    "h3"
+  ).textContent = `${arreglo[position].carta.nombre}`;
+
 
   let clone = templatePantallaCartas.cloneNode("true");
   pantallaCartas.innerHTML = "";
@@ -199,13 +220,4 @@ function renderizarPantallaResultados(persona1, persona2) {
     header.style.display = "flex";
     pantallaInicial.style.display = "flex";
   });
-}
-class Tools {
-  static GenerarAleatorio() {
-    return Math.floor(Math.random() * 7);
-  }
-  static Matching(persona1, persona2) {
-    if (persona1.calcularValor() == persona2.calcularValor()) return "Si";
-    else return "No";
-  }
 }
