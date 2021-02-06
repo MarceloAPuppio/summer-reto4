@@ -1,0 +1,63 @@
+    * {
+    margin: 0;
+    }
+
+    body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    overflow: hidden;
+    }
+button:hover{
+    animation: rebotar 0.2s;
+}
+    button:nth-child(1){
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    }
+    button:nth-child(2){
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    button:nth-child(3){
+        position: absolute;
+        top: 60px;
+        right: 20px;
+    }
+    #cuadrado1 {
+    height: 200px;
+    width: 100%;
+    background:url(https://media.tycsports.com/files/2021/02/03/175694/messi-y-di-maria_862x485.jpg);
+    transition: all 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    }
+
+    /* .translatey traslada el elemento en porcentaje sobre si mismo, positvo es para abajo, negativo para arriba. tiene sentido */
+    .translatey {
+    transform: translateY(150%);
+    }
+
+    .translatex {
+        transform: translateX(100%);
+    }
+
+    .rotateZ{
+        transform: rotate(360deg);
+    }
+
+@keyframes rebotar{
+    0%{
+    transform: rotate(10deg);}
+    50%{
+    transform: rotate(-10deg);}
+    100%{
+    transform: rotate(0deg);}
+    }
+    .rebotar{
+        animation: rebotar 3s;
+    }
+    /* .translatex traslada el elemento en porcentaje sobre si mismo, positvo es para la derecha, negativo para la izq

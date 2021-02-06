@@ -76,7 +76,7 @@
 
     },
     {
-      "nombre": "La rueda de la fortuna",
+      "nombre": "La fortuna",
       "descripcion": "Nada puede malir sal, aunque la fortuna no existe, uno erige su propio destino",
       "src": "images/baraja/12.jpg",
       "valor":100
@@ -108,6 +108,38 @@
       "nombre": "Los enamorados",
       "descripcion": "Más amor y menos odio :)",
       "src": "images/baraja/16.jpg",
+      "valor":72
+
+    }
+    ,
+    {
+      "nombre": "Encrucijada",
+      "descripcion": "Ver un capítulo más, o irse a dormir...",
+      "src": "images/baraja/17.png",
+      "valor":72
+
+    }
+    ,
+    {
+      "nombre": "Sota de bastos",
+      "descripcion": "Es la carta 18 ya no se que poner",
+      "src": "images/baraja/18.jpg",
+      "valor":72
+
+    }
+    ,
+    {
+      "nombre": "El sumo sacerdote",
+      "descripcion": "descripción pendiente por falta de imaginación :S",
+      "src": "images/baraja/19.jpg",
+      "valor":72
+
+    }
+    ,
+    {
+      "nombre": "El cansado",
+      "descripcion": "Asi terminé después de este reto",
+      "src": "images/baraja/20.jpg",
       "valor":72
 
     }

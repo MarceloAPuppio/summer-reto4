@@ -1,0 +1,375 @@
+* {
+  margin: 0%;
+  /* font-family: "Simpsons", sans-serif; */
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+@font-face {
+  font-family: "Simpsons";
+  src: url("../Simpsonfont.otf");
+}
+
+body {
+  overflow: hidden;
+}
+/*HERRAMIENTAS*/
+.off {
+  display: none !important;
+}
+.on {
+  display: block;
+}
+.flex-center {
+  display: flex !important;
+  justify-items: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/*------------- PRIMERA VISTA-----------------*/
+.welcome {
+  display: flex;
+  /* background-color: #7e89fd; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("https://i.pinimg.com/originals/b6/2e/37/b62e37313f4cbb131687d428bbd6933c.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.datos {
+  font-family: "Simpsons", sans-serif;
+  background-color: #fdfaf9;
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+  padding: 20px;
+  width: 82%;
+  transition: all 0.6s ease-in;
+  box-shadow: 0px 0px 9px rgb(0 0 0 / 60%);
+}
+.datos button {
+  font-family: "Simpsons", sans-serif;
+}
+.datos input {
+  font-family: "Simpsons", sans-serif;
+  transition: all 0.6s;
+}
+.bienvenida {
+  text-align: center;
+  font-size: 32px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/*TRANSITIONS*/
+.datos-out {
+  transform: translateY(150%);
+}
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+/*------------------------------*/ /*---------SEGUNDA VISTA--------*/ /*------------------------------*/
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+#loading-img {
+  width: 160px;
+}
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.girar {
+  animation: girar infinite 1s;
+}
+
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+/*------------------------------*/ /*---------TERCERA VISTA--------*/ /*------------------------------*/
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+#close {
+  text-align: left;
+}
+#cartas-section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https://i.pinimg.com/originals/b6/2e/37/b62e37313f4cbb131687d428bbd6933c.jpg");
+  background-size: cover;
+  background-position: center; */
+  transition: all 0.6s;
+  text-align: center;
+  overflow: hidden;
+}
+/* .cartas {
+  padding: 80px 0;
+} */
+.carta-total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.carta {
+  min-width: 100% !important;
+}
+.carta-img {
+  width: 200px;
+  height: 40vh;
+  background-color: #7e89fd;
+  margin: 35px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#cartas-container {
+  box-sizing: border-box;
+  height: 95%;
+  margin: auto;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #fdfaf9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.cartas-in {
+  transform: translateY(-98%);
+}
+.card-info {
+  max-width: 85%;
+  margin: 10px auto;
+  min-height: 108px;
+  max-height: 109px;
+  overflow: scroll;
+  font-size: 20px;
+}
+#botonera ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+#botonera ul li {
+  color: #7e89fd;
+}
+
+.red {
+  background-color: red;
+}
+.violet {
+  background-color: violet;
+}
+.first-card {
+  transform: translateX(0%);
+}
+.second-card {
+  transform: translateX(-100%);
+}
+.third-card {
+  transform: translateX(-200%);
+}
+.fourth-card {
+  transform: translateX(-300%);
+}
+.fifth-card {
+  transform: translateX(-400%);
+}
+.sixth-card {
+  transform: translateX(-500%);
+}
+.seventh-card {
+  transform: translateX(-600%);
+}
+#carta-actual {
+  transition: all 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+#lisa {
+  width: 120px;
+}
+.img-de-carta {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+}
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+/*------------------------------*/ /*---------TERCERA VISTA--------*/ /*------------------------------*/
+/*------------------------------*/ /*-----------resultados---------*/ /*------------------------------*/
+#resultados-section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https://i.pinimg.com/originals/b6/2e/37/b62e37313f4cbb131687d428bbd6933c.jpg");
+  background-size: cover;
+  background-position: center; */
+  transition: all 0.6s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+}
+#resultados-container {
+  box-sizing: border-box;
+  height: 95%;
+  margin: auto;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #fdfaf9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+.resultados-in {
+  transform: translateY(-197%);
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+}
+#terminar {
+  text-align: right;
+  margin-top: -25px;
+}
+.img-icon {
+  width: 100%;
+  height: 100%;
+}
+.cartatitulo {
+  font-size: 20px;
+}
+#guardadas {
+  font-family: "Simpsons";
+  border-radius: 15px;
+  margin: 10px;
+  height: 300px;
+  padding: 20px;
+  width: 82%;
+  transition: all 0.6s ease-in;
+  background-color: #fdfaf9;
+  box-shadow: 0px 0px 9px rgb(0 0 0 / 60%);
+}
+button {
+  background-color: #fed521;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+button:focus {
+  outline: none !important;
+}
+input:focus {
+  outline: none;
+}
+.ultima-carta {
+  display: flex;
+  flex-direction: column;
+}
+.ultima-carta button {
+  margin: 20px;
+}
+.final {
+  display: flex;
+  flex-direction: column;
+}
+.final button {
+  margin: 10px;
+}
+@keyframes bg-up {
+  0% {
+    background-position-x: 29vh;
+  }
+  100% {
+    background-position-x: -209vh;
+  }
+}
+.background-up {
+  animation: bg-up 3s;
+}
+/*------------------------------*/ /*------------------------------*/ /*------------------------------*/
+/*------------------------------*/ /*-------------ULTIMA-----------*/ /*------------------------------*/
+/*------------------------------*/ /*-----------GUARDADAS----------*/ /*------------------------------*/
+#lista-guardadas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  padding: 0px;
+}
+#lista-guardadas li {
+  background-color: #fed521;
+  padding: 12px;
+  margin: 5px 0px;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+}
+
+#close-guardada {
+  text-align: right;
+}
+/*----------------------FORM-----------------------*/
+form {
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+input {
+  background-color: #d7eefc;
+  font-size: 24px;
+  border-radius: 15px;
+  padding: 6px;
+  margin: 5px 0px;
+}
+/*-------------VALIDACION---------------*/
+@keyframes inputVacio {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  50% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.inputVacio {
+  animation: inputVacio 3 0.2s;
+  border: 2px solid red;
+}
+.matcheo {
+  width: 50px;
+}
+.blue {
+  background-color: #7e89fd;
+}
+.red {
+  background-color: rgb(250, 76, 76);
+}
+.violet {
+  background-color: rgb(243, 106, 243);
+}
+.green {
+  background-color: rgb(69, 204, 69);
+}
+.orange {
+  background-color: rgb(224, 169, 67);
+}
+.lightblue {
+  background-color: lightblue;
+}

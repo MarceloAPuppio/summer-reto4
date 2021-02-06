@@ -4,7 +4,7 @@ let contadorGuardados = 0;
 //Clases
 class Tools {
   static GenerarAleatorio() {
-    return Math.floor(Math.random() * 7);
+    return Math.floor(Math.random() * 20);
   }
   static Matching(persona1, persona2) {
     if (persona1.calcularValor() == persona2.calcularValor()) return "Si";
@@ -47,7 +47,7 @@ const inputJugador1 = document.getElementById("jugador1");
 const inputJugador2 = document.getElementById("jugador2");
 const templatePantallaCartas = document.getElementById(
   "template-pantalla-cartas"
-  ).content;
+).content;
 const templatePantallaResultados = document.getElementById(
   "template-pantalla-resultados"
 ).content;
@@ -120,8 +120,6 @@ fetch("arreglo.json")
 //areglo de cartas de personas
 let arregloCartasPersonas = [];
 
-
-
 function aumentarPosicionArray() {
   posicionArray++;
   if (posicionArray > 5) posicionArray = 0;
@@ -148,7 +146,6 @@ function renderizarPantallaCartas(arreglo, position) {
   templatePantallaCartas.querySelector(
     "h3"
   ).textContent = `${arreglo[position].carta.nombre}`;
-
 
   let clone = templatePantallaCartas.cloneNode("true");
   pantallaCartas.innerHTML = "";

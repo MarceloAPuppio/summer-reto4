@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Juego de azar temática Los Simpsons">
+<meta name="author" content="Gonzalo Grágeda">
+<meta name="keywords" content="App, juego, Los Simpsons, Azar, suerte, tarot">
+<meta name="copyright" content="Gonzalo Grágeda 2021">
+<title>Los Simpsons</title>
+<link rel="icon" href="./iconos/logo.png" type="image/png">
+<!-- ROBOTS -->
+<meta name="robots" content="index follow">
+<!-- CSS STYLES -->
+<link rel="stylesheet" href="./css/styles.css">
+<!-- FONTAWESOME -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!-- FONT.GOOGLE.COM -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+<!-- Facebook-->
+<meta property='og:title' content="Simpsons Game">
+<meta property='og:description' content="Juego de azar temática Los Simpsons">
+<meta property="og:image" content="https://cadenaser00.epimg.net/ser/imagenes/2014/12/17/television/1418786070_064451_1418786171_noticia_normal.jpg" />
+<meta property="og:type" content="App" />
+<meta property='og:url' content="Simpsons-gg.web.app">
+<!-- Twitter -->
+<meta name="twitter:title" content="ListaCompra APP" />
+<meta name="twitter:description" content="Juego de azar temática Los Simpsons" />
+<meta name="twitter:image" content="https://cadenaser00.epimg.net/ser/imagenes/2014/12/17/television/1418786070_064451_1418786171_noticia_normal.jpg" />
+</head>
+<body>
+<section class="welcome" id="welcome" >
+<img id='loading-img'class="off" src="https://i.pinimg.com/originals/90/2e/b1/902eb16546985bbc3b42628ee6bffdfe.png" alt="">
+<div class="datos" id="datos">
+<h1 class="bienvenida">Bienvenidxs</h1>
+<form action="">
+<input id="player1" type="text" placeholder="Jugador 1">
+<input id="player2" type="text" placeholder="Jugador 2">
+</form>
+<button id="start">jugar</button>
+<button id="guardadasBtn" class="off">replay</button>
+</div>
+<div id="guardadas" class="datos-out off">
+<div id="close-guardada"><i class="fas fa-chevron-down"></i></div>
+<h2>Partidas guardadas</h2>
+<ul id="lista-guardadas">
+</ul>
+</div>
+</section>
+<section id="cartas-section" class="off">
+<div id="cartas-container" >
+<div id="close"><i class="fas fa-long-arrow-alt-left"></i></div>
+<div class="carta-total first-card" id="carta-actual">
+<div class="carta">
+<h1 id="title1" class="cartatitulo">carta 1/3 de jony</h1>
+<div class="cartas">
+<div class="carta-img blue" id="card-img1"></div>
+<h2 id="card-title1">nombre de la carta</h2>
+<p id="card-info1" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<h1 id="title2"class="cartatitulo">carta 2/3 de jony</h1>
+<div class="cartas">
+<div id="card-img2" class="carta-img red">cartita</div>
+<h2 id="card-title2">nombre de la carta</h2>
+<p id="card-info2" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<h1 id="title3"class="cartatitulo">carta 2/3 de jony</h1>
+<div class="cartas">
+<div id="card-img3" class="carta-img violet">cartita</div>
+<h2 id="card-title3">nombre de la carta</h2>
+<p id="card-info3" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<h1 id="title4"class="cartatitulo">carta 2/3 de jony</h1>
+<div class="cartas">
+<div id="card-img4" class="carta-img lightblue">cartita</div>
+<h2 id="card-title4">nombre de la carta</h2>
+<p id="card-info4" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<h1 id="title5"class="cartatitulo">carta 2/3 de jony</h1>
+<div class="cartas">
+<div id="card-img5" class="carta-img orange">cartita</div>
+<h2 id="card-title5">nombre de la carta</h2>
+<p id="card-info5" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<h1 id="title6"class="cartatitulo">carta 2/3 de jony</h1>
+<div class="cartas">
+<div id="card-img6" class="carta-img green">cartita</div>
+<h2 id="card-title6">nombre de la carta</h2>
+<p id="card-info6" class="card-info"> Lorem ipsum dolor sit, amet consectetur adipisicing
+elit. Quasi saepe quis a provident perferendis soluta
+? Dolor adipisci magni pariatur iusto nostr
+um? Fuga iste consectetur veritatis accusantium itaque
+velit culpa nesciunt?</p>
+</div>
+</div>
+<div class="carta">
+<!-- <h1 id="title7">Listo</h1> -->
+<div class="ultima-carta">
+<button id="verResultados">Ver Resultados</button>
+<button id="volverARepartir">Volver a repartir</button>
+</div>
+</div>
+</div>
+<div id="botonera">
+<ul>
+<li id="first-btn"><i id="circle1" class="fas fa-circle"></i></li>
+<li id="second-btn"><i id="circle2" class="far fa-circle"></i></li>
+<li id="third-btn"><i id="circle3" class="far fa-circle"></i></li>
+<li id="fourth-btn"><i id="circle4" class="far fa-circle"></i></li>
+<li id="fifth-btn"><i id="circle5" class="far fa-circle"></i></li>
+<li id="sixth-btn"><i id="circle6" class="far fa-circle"></i></li>
+<li id="seventh-btn"><i id="circle7" class="far fa-circle"></i></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="resultados-section" class="">
+<div id="resultados-container">
+<div id="terminar"><i class="fas fa-times"></i></div>
+<div class="jugador1">
+<h1 id="jugadorfinal1">jony</h1>
+<div class="flex-center">
+<div class="blue circle" id="result-circle1"></div>
+<div class="red circle" id="result-circle2"></div>
+<div class="violet circle" id="result-circle3"></div>
+</div>
+</div>
+<div class="jugador2">
+<h1 id="jugadorfinal2">anvor</h1>
+<div class="flex-center">
+<div class="blue circle"id="result-circle4"></div>
+<div class="red circle"id="result-circle5"></div>
+<div class="violet circle"id="result-circle6"></div>
+</div>
+</div>
+<div class="result">
+<h1 id="match-question">¿Hay match?</h1>
+<div class="flex-center">
+<img class="matcheo" id="match-answer">
+</div>
+</div>
+<div class="final">
+<button id="guardar">Guardar</button>
+<button id="salir">Salir</button>
+</div>
+</div>
+</section>
+<script src="./scripts/app.js"></script>
+<script src="./json/mazo.json"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.5/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

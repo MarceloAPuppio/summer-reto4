@@ -1,0 +1,181 @@
+[{
+    "carta1":{
+        "nombre": "Abraham Simpson",
+        "img": "abrahamSimpson.png",
+        "info":
+          "Nostálgico y gruñón. Bastante despreciado por sus seres queridos y marginado por su condición de anciano"
+      },
+    "carta2":{
+        "nombre": "Alcalde Diamante",
+        "img": "alcalde.png",
+        "info":
+          "Político corrupto, tiene contactos con la mafia local, engaña a su esposa y se dedica exclusivamente a divertirse."
+      
+      },
+      "carta3": {
+            "nombre": "Barney",
+            "img": "barney.png",
+            "info":
+              "Es el alcohólico de Springfield, seguidor de lord Palmerston y uno de los mejores amigos de Homero Simpson."
+          },
+          "carta4": {
+            "nombre": "Bart Simpson",
+            "img": "bartSimpson.png",
+            "info":
+              "Es el problemático de la familia. Su rol principal es el de hacer travesuras, además de meterse él mismo en líos o a los demás"
+          },
+          "carta5": {
+            "nombre": "Bob Patiño",
+            "img": "bobPatiño.png",
+            "info":
+              "Genio criminal. Frecuentemente busca vengarse de Bart, pero sus planes suelen fracasar."
+          },
+          "carta6": {
+            "nombre": "Capitán Arrr",
+            "img": "capitanArrr.png",
+            "info": "Capitán de barco con experiencia. ¡Arrr! Sus dos ojos son de vidrio"
+          },
+          "carta7": {
+                "nombre": "Cletus Spuckler",
+                "img": "cletus.png",
+                "info":
+                  "Estereotipo de persona rural, vive en bajas condiciones de economía y tiene una familia muy numerosa."
+              },
+              "carta8": {
+                "nombre": "Daly",
+                "img": "daly.png",
+                "info":
+                  "Es uno de los protagonistas de la famosa serie 'Tomy y Daly', parodia de Jerry."
+              },
+              "carta9": {
+                "nombre": "Duffman",
+                "img": "duffman.png",
+                "info":
+                  "Duffman es la mascota oficial de la cerveza más consumida de Springfield: la Duff."
+              },
+              "carta10": {
+                "nombre": "Homero Simpson",
+                "img": "homeroSimpson.png",
+                "info": "Padre de la familia protagonista, es quien lleva dinero al hogar."
+              },
+              "carta11": {
+                "nombre": "Jefe Górgory",
+                "img": "jefeGorgory.png",
+                "info":
+                  "Es el jefe de policía de Springfield y representa al estereotipo de policía perezoso: obeso, incompetente, aficionado a las rosquillas."
+              },
+              "carta12": {
+                "nombre": "Jeff Albertson",
+                "img": "jeffAlbertson.png",
+                "info":
+                  "Es el dueño de The Android's Dungeon & Baseball Card Shop, una tienda especializada en cómics, cromos de béisbol, ciencia ficción y coleccionismo, graduado de Ingeniería Química."
+              },
+              "carta13": {
+                "nombre": "Kearney",
+                "img": "kearney.png",
+                "info":
+                  "Es uno de los alumnos de mayor edad en la escuela de Springfield, miembro del grupo de los matones."
+              },
+              "carta14": {
+                "nombre": "Kent Brockman",
+                "img": "kentBrockman.png",
+                "info":
+                  "Es uno de los periodistas más famosos de Springfield, trabaja en el Canal 6."
+              },
+              "carta15": {
+                "nombre": "Krusty el payaso",
+                "img": "krusty.png",
+                "info":
+                  "Es el payaso que presenta el programa de televisión favorito de los niños de Springfield."
+              },
+              "carta16": {
+                "nombre": "Lisa Simpson",
+                "img": "lisaSimpson.png",
+                "info":
+                  "Cuenta con la ventaja de ser superdotada, algo corroborado por el psicólogo del colegio. Rendimiento escolar elevado"
+              },
+              "carta17": {
+                "nombre": "Maggie Simpson",
+                "img": "maggieSimpson.png",
+                "info":
+                  "Se limita a comer, dormir, eructar y succionar su chupete. Su familia le presta menos atención que la necesaria."
+              },
+              "carta18": {
+                "nombre": "Marge Simpson",
+                "img": "margeSimpson.png",
+                "info":
+                  "Esposa de Homer y madre de Bart, Lisa y Maggie. Su presencia es indispensable para mentener la familia unida."
+              },
+              "carta19": {
+                "nombre": "Milhouse Van Houten",
+                "img": "milhouse.png",
+                "info":
+                  "Es el mejor amigo de Bart. Tiene aspecto y comportamientos de nerd pero dista de serlo."
+              },
+              "carta20": {
+                "nombre": "Moe",
+                "img": "moe.png",
+                "info":
+                  "Es el propietario y único barman de la Taberna de Moe, donde es víctima de las bromas telefónicas de Bart. "
+              },
+              "carta21": {
+                "nombre": "Nelson Muntz",
+                "img": "nelson.png",
+                "info":
+                  "Es fuerte, abusón, le encanta golpear y fastidiar a los demás. Fue abandonado por su padre."
+              },
+              "carta22": {
+                "nombre": "Otto Mann",
+                "img": "otto.png",
+                "info":
+                  "Se caracteriza por su estilo alocado de conducción, su pasión por el heavy metal y por actuar como un adolescente."
+              },
+              "carta23": {
+                "nombre": "Profesor Frink",
+                "img": "profesorFrink.png",
+                "info":
+                  "Es profesor en el Instituto de Tecnología de Springfield. Usualmente descrito como el esterotipo de <nerd>"
+              },
+              "carta24": {
+                "nombre": "Rafa",
+                "img": "ralph.png",
+                "info":
+                  "Representa el estereotipo del escolar lerdo. Suele decir frases hilarantes, incluso algo tontas y sin sentido."
+              },
+              "carta25": {
+                "nombre": "Reverendo Alegría",
+                "img": "reverendoAlegria.png",
+                "info":
+                  "El Reverendo Alegría es el pastor que dirige la Iglesia de Springfield, profesa la religión protestante."
+              },
+              "carta26": {
+                "nombre": "Señor Burns",
+                "img": "señorBurns.png",
+                "info":
+                  "El señor Burns es el ciudadano más rico, poderoso y anciano de Springfield; la revista Forbes calcula que su fortuna ronda los 16,8 mil millones de dólares."
+              },
+              "carta27": {
+                "nombre": "Seymour Skinner",
+                "img": "skinner.png",
+                "info":
+                  "Es el director de la Escuela Primaria de Springfield, a la que asisten Bart y Lisa Simpson, y es un soldado veterano, que sirvió durante la Guerra de Vietnam."
+              },
+              "carta28": {
+                "nombre": "Smithers",
+                "img": "smithers.png",
+                "info":
+                  "Es el fiel ayudante ejecutivo de Montgomery Burns. Posee un profundo amor y lealtad al Señor Burns."
+              },
+              "carta29": {
+                "nombre": "Tomy",
+                "img": "tomy.png",
+                "info":
+                  "Es uno de los protagonistas de la famosa serie 'Tomy y Daly', parodia de Tom."
+              },
+              "carta30": {
+                "nombre": "Willie",
+                "img": "willie.png",
+                "info":
+                  "Es el jardinero encargado de mantener la limpieza en la Escuela Primaria de Springfield."
+              }
+}]

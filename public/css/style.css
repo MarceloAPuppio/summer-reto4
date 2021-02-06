@@ -1,8 +1,8 @@
 :root {
   --Primary-color: #48a682;
   --Light-primar-color: #93dd7b;
-  --Secondary-color: #fBF847;
-  --Light-secondary-color:#fffd91;;
+  --Secondary-color: #fbf847;
+  --Light-secondary-color: #fffd91;
   --Text-primary-color: rgb(26, 25, 25);
   --Text-secondary-color: rgb(73, 73, 73);
 }
@@ -220,7 +220,7 @@ header {
 .pantalla-cartas__description {
   flex-basis: 90%;
   text-align: center;
-  margin:0;
+  margin: 0;
   /* background: darkolivegreen; */
   height: 150px;
 }
